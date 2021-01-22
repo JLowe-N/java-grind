@@ -2,13 +2,13 @@ import java.util.Scanner;
 
 class columbian {
     public static void main(String args[]) {
-        Scanner justin = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
+        sumatra sumatraObject = new sumatra();
 
-        int counter = 0;
-        while (counter < 10) {
-            System.out.println(counter);
-            counter++;
-        }
+        System.out.println("Enter your name here: ");
+        String name = input.nextLine();
+
+        sumatraObject.simpleMessage(name);
 
     }
 }
