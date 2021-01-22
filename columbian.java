@@ -1,18 +1,14 @@
 import java.util.Scanner;
 
-class apples {
+class columbian {
     public static void main(String args[]) {
         Scanner justin = new Scanner(System.in);
 
-        int tuna = 5;
-        int bass = 10;
-
-        if (tuna == bass) {
-            System.out.println("Tuna is a bass");
-        } else {
-            System.out.println("Tuna is it's own thing!");
+        int counter = 0;
+        while (counter < 10) {
+            System.out.println(counter);
+            counter++;
         }
 
-        System.out.println(++tuna);
     }
 }
