@@ -2,18 +2,20 @@ import java.util.Random;
 
 class columbian {
     public static void main(String args[]) {
-        int bucky[]={3,4,5,6,7};
+        int firstarray[][] = { { 8, 9, 10, 11 }, { 12, 13, 14, 15 } };
+        int secondarray[][] = { { 2, 3, 4 }, { 1 }, { 21, 7, 7 } };
 
-        change(bucky);
-
-        for (int y:bucky) {
-            System.out.println(y);
-        }
+        display(firstarray);
+        System.out.print("\n\n");
+        display(secondarray);
     }
 
-    public static void change(int x[]) {
-        for (int counter=0;counter<x.length;counter++) {
-            x[counter] += 5;
+    public static void display(int x[][]) {
+        for (int row = 0; row < x.length; row++) {
+            for (int column = 0; column < x[row].length; column++) {
+                System.out.print(x[row][column] + "\t");
+            }
+            System.out.print("\n");
         }
     }
 }
