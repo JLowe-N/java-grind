@@ -5,10 +5,10 @@ class columbian {
         Scanner input = new Scanner(System.in);
         sumatra sumatraObject = new sumatra();
 
-        System.out.println("Enter your name here: ");
-        String name = input.nextLine();
+        System.out.println("Enter your favorite person's name here: ");
+        String temp = input.nextLine();
+        sumatraObject.setName(temp);
+        sumatraObject.saying();
 
-        sumatraObject.simpleMessage(name);
-
-    }
+        }
 }
