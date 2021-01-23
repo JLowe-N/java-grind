@@ -2,20 +2,20 @@ import java.util.Scanner;
 
 class columbian {
     public static void main(String args[]) {
-        int age = 110;
+        Scanner input = new Scanner(System.in);
+        int total = 0;
+        int grade;
+        int average;
+        int counter = 0;
 
-        if (age < 50) {
-            System.out.println("You are young.");
-        } else if (age >= 50) {
-            System.out.println("You have experience.");
-            if (age > 75 || age <= 100) {
-                System.out.println("You have wisdom.");
-            } else {
-                System.out.println("You are somewhere in between.");
-            }
-        } else {
-            System.out.println("Wow, I didn't expect that age!");
+        while (counter < 10) {
+            grade = input.nextInt();
+            total = total + grade;
+            counter++;
         }
+        input.close();
+        average = total / 10;
+        System.out.println("Your average is " + average);
 
     }
 }
