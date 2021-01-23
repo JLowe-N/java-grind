@@ -1,13 +1,14 @@
-import java.util.Scanner;
+import java.util.Random;
 
 class columbian {
     public static void main(String args[]) {
-        double amount;
-        double principal = 10000;
-        double rate = 0.01;
-        for (int year=1;year<=20;year++) {
-            amount = principal * Math.pow(1 + rate, year);
-            System.out.println(year + "  " + amount);
+        Random dice = new Random();
+        
+        for (int counter = 1; counter <= 10; counter++) {
+            int number;
+
+            number = 1 + dice.nextInt(6);
+            System.out.println("number " + number);
         }
     }
 }
