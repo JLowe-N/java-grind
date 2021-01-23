@@ -2,13 +2,16 @@ import java.util.Random;
 
 class columbian {
     public static void main(String args[]) {
-        Random dice = new Random();
-        
-        for (int counter = 1; counter <= 10; counter++) {
-            int number;
+        int justin[] = new int[10];
 
-            number = 1 + dice.nextInt(6);
-            System.out.println("number " + number);
-        }
+        justin[0] = 87; // crosby!
+        justin[1] = 543;
+        justin[9] = 65;
+
+        int bucky[] = {2,4,6,8,10};
+
+        System.out.println(justin[1]);
+        System.out.println(bucky[3]);
+
     }
 }
