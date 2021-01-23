@@ -1,5 +1,9 @@
 public class sumatra {
     private String girlName;
+
+    public sumatra(String name) {
+        girlName = name;
+    }
     public void setName(String name){
         girlName = name;
     }
