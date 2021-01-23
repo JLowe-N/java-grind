@@ -2,16 +2,12 @@ import java.util.Random;
 
 class columbian {
     public static void main(String args[]) {
-        int justin[] = new int[10];
+        System.out.println("Index\tValue");
+        int justin[]={32,12,18,54,2};
 
-        justin[0] = 87; // crosby!
-        justin[1] = 543;
-        justin[9] = 65;
-
-        int bucky[] = {2,4,6,8,10};
-
-        System.out.println(justin[1]);
-        System.out.println(bucky[3]);
+        for (int counter=0; counter<justin.length; counter++) {
+            System.out.println(counter + "\t" + justin[counter]);
+        }
 
     }
 }
