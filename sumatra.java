@@ -1,20 +1,17 @@
-public class sumatra extends coffee {
-    private int sum;
-    private final int NUMBER;
+import java.awt.FlowLayout;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
 
-    public sumatra(int x) {
-        NUMBER = x;
-    }
+public class sumatra extends JFrame {
+    
+    private JLabel item1;
 
-    public void add() {
-        sum += NUMBER;
-    }
+    public sumatra() {
+        super("The title bar");
+        setLayout(new FlowLayout());
 
-    public void drink() {
-        System.out.println("Sumatran coffee just tastes different, thanks to override/overload.");
-    }
-
-    public String toString() {
-        return String.format("sum = %d\n", sum);
+        item1 = new JLabel("This is a sentence.");
+        item1.setToolTipText("This is gonna show up on hover.");
+        add(item1);
     }
 }
