@@ -1,24 +1,20 @@
-public class sumatra {
-    private String first;
-    private String last;
-    private static int members = 0;
+public class sumatra extends coffee {
+    private int sum;
+    private final int NUMBER;
 
-    public sumatra(String fn, String ln) {
-        first = fn;
-        last = ln;
-        members++;
-        System.out.printf("Constructor for %s %s, members in the club: %d\n", first, last, members);
+    public sumatra(int x) {
+        NUMBER = x;
     }
 
-    public String getFirst() {
-        return first;
+    public void add() {
+        sum += NUMBER;
     }
 
-    public String getLast() {
-        return last;
+    public void drink() {
+        System.out.println("Sumatran coffee just tastes different, thanks to override/overload.");
     }
 
-    public static int getMembers() {
-        return members;
+    public String toString() {
+        return String.format("sum = %d\n", sum);
     }
 }

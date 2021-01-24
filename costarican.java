@@ -1,4 +1,4 @@
-public class costarican {
+public class costarican extends coffee {
     private int month;
     private int day;
     private int year;
