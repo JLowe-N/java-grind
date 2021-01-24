@@ -9,4 +9,16 @@ public class sumatra {
         members++;
         System.out.printf("Constructor for %s %s, members in the club: %d\n", first, last, members);
     }
+
+    public String getFirst() {
+        return first;
+    }
+
+    public String getLast() {
+        return last;
+    }
+
+    public static int getMembers() {
+        return members;
+    }
 }
