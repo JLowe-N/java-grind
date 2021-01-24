@@ -1,20 +1,12 @@
-public enum sumatra {
-    justin("cool", "28"), bucky("nice", "22"), jules("worker", "33"), kelsey("smart", "22"),
-    sruthi("adventurous", "24");
+public class sumatra {
+    private String first;
+    private String last;
+    private static int members = 0;
 
-    private final String desc;
-    private final String year;
-
-    sumatra(String description, String birthday) {
-        desc = description;
-        year = birthday;
-    }
-
-    public String getDesc() {
-        return desc;
-    }
-
-    public String getYear() {
-        return year;
+    public sumatra(String fn, String ln) {
+        first = fn;
+        last = ln;
+        members++;
+        System.out.printf("Constructor for %s %s, members in the club: %d\n", first, last, members);
     }
 }
