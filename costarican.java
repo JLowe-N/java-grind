@@ -1,17 +1,5 @@
 public class costarican extends coffee {
-    private int month;
-    private int day;
-    private int year;
-
-    public costarican(int m, int d, int y) {
-        month = m;
-        day = d;
-        year = y;
-
-        System.out.printf("The constructor for this is %s\n", this);
-    }
-
-    public String toString() {
-        return String.format("%d/%d/%d", month, day, year);
+    public void drink() {
+        System.out.println("Drinking the coffee, a nice costarican blend.");
     }
 }

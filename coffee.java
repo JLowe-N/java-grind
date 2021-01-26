@@ -1,5 +1,3 @@
-public class coffee {
-    public void drink() {
-        System.out.println("Drinking the coffee, thanks to inhereitance from the superclass.");
-    }
+public abstract class coffee {
+    public abstract void drink();
 }
